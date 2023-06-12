@@ -1,0 +1,61 @@
+ @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+
+ * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+ }
+
+ body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #eaeaec;
+
+ }
+
+ header {
+    height: 70vh;
+    background-image: url(images/portada.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+ }
+
+ .textoHeader {
+    font-size: 20px;
+    justify-content: left;
+    padding: 50px;
+ }
+
+ h1 {
+    font-weight: 700;
+    font-size: 90px;
+    text-align: left;
+    padding: 150px 10px 10px;
+ }
+
+ p {
+    margin: 30px 250px 0px 10px;
+ }
+
+ button {   
+   background-image: linear-gradient(to right, #58c2dc 0%, #b09eddc2 51%, #8c408e 100%);
+   flex: 1 1 auto;
+   margin: 10px;
+   padding: 20px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: #ffffff;
+   border-radius: 10px;
+ }
+
+ button:hover {
+   background-position: right center;
+   background-image: linear-gradient(to right, #58c2dc 0%, #b09eddc2 51%, #8c408e 100%);
+ }
