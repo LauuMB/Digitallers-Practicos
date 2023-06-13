@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <title>Document</title>
+   <style>
+      body{
+         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      header {
+         background: #283048;
+         background: -webkit-linear-gradient(to right, #859398, #283048);
+         background: linear-gradient(to right, #859398, #283048);
+
+         color: #ffffff;
+         text-align: center;
+         padding: 5px;
+         border-radius: 15px;
+      }
+
+      form {
+         background-color: #f4f6f7;
+         width: 40%;
+         margin: auto;
+         padding: 2em;
+         margin-top: 1em;
+         border-radius: 15px;
+         box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.247);
+         color: #283048;
+      }
+
+      input {
+         width: 100%;
+         border-radius: 2px;
+         border: none;         
+      }
+
+      select {
+         width: 100%;
+         border-radius: 2px;
+      }
+
+      h1{
+         color: #dcdcdd;         
+      }
+      h2{
+         color: #dcdcdd;
+
+      }
+   </style>
+</head>
+
+<body>
+   <header>
+      <h1>Bienvenidos Digitalers</h1>
+      <h2>Registro para crear un usuario nuevo</h2>
+   </header>
+   <main>
+      <form method="">
+         <div>
+            <label for="txtNombre">Nombre:</label>
+            <div><input type="text" id="txtNombre" name="nombre" required pattern="^[A-Z][a-z]*$"
+                  placeholder="Ingrese su Nombre" /></div>
+         </div>
+
+         <div>
+            <lavel for="txtApellido">Apellido:</lavel>
+            <div><input type="text" id="txtApellido" name="apellido" required minlength="3" maxlength="10" /></div>
+         </div>
+
+         <div>
+            <label for="txtDocumento">Documento</label>
+            <div><input type="number" id="txtDocumento" name="documento" required min="1000000" max="60000000"></div>
+         </div>
+         <div>
+            <label for="cmbPais">Pais</label>
+            <select>
+               <option>Seleccione un pais...</option>
+               <option>Argentina</option>
+               <option>Uruguay</option>
+               <option>Chile</option>
+               <option>Brasil</option>
+               <option>Bolivia</option>
+            </select>
+         </div>
+
+         <div>
+            <label for="txtEmail">Email</label>
+            <div><input type="email" id="txtEmail" name="email" required /></div>
+         </div>
+
+         <div>
+            <label for="txtFecha">Fecha de Nacimiento</label>
+            <div><input type="date" /></div>
+         </div>
+         <div>
+            <label for="txtPassword">Password</label>
+            <div><input type="password" id="namePassword" name="password" required /></div>
+         </div>
+         <div>
+            <label for="txtVerificacionPassword">Verificar Password</label>
+            <div>
+               <input type="password" id="txtVerificacionPassword" name="verificapassword" required />
+            </div>
+         </div>
+         <label>Acepto Terminos y Condiciones</label>
+         <input type="checkbox" id="chkAcepto" name="aceptoTerminos" required />
+         <button>Enviar Formulario</button>
+      </form>
+   </main>
+   <footer>
+
+   </footer>
+</body>
+
+</html>

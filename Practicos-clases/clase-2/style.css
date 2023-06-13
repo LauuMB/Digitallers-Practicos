@@ -50,12 +50,35 @@
    text-align: center;
    text-transform: uppercase;
    transition: 0.5s;
-   background-size: 200% auto;
-   color: #ffffff;
+   background-size: 200% auto;   
    border-radius: 10px;
  }
 
  button:hover {
    background-position: right center;
    background-image: linear-gradient(to right, #58c2dc 0%, #b09eddc2 51%, #8c408e 100%);
+ }
+
+ a:link{
+   text-decoration: none;
+   color:white
+ }
+
+ section{   
+   margin-top: 50px;
+   display: flex;
+   align-items: center;
+   flex-direction: column;   
+ }
+ h2{
+   font-size: 30px;
+   font-weight: 500;
+ }
+
+ img{
+   width: 400px;
+ }
+ article{
+   margin-top: 30px;
+   justify-content: center;
  }
