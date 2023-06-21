@@ -5,25 +5,21 @@
    <title>Digitalers</title>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
    <header>
       <div>
-         <img src="/clase-4/img/portada.jpg" width="300px" alt="portada">
-      </div>
+         <a href="index.html"> <img class="logo" src="/clase-4/img/portal.png"></a>
+      </div>     
       <div>
-         <h1>Digitalers Portal&#9889</h1>
-         <h2>Las ultimas noticias del curso de Digitalers</h2>
+         <!-- <h1>Digitalers Portal&#9889</h1> -->
+         <h1>Las ultimas noticias del curso de Digitalers</h1>
       </div>
    </header>
-   <nav>
-      <ul>
-         <li><a href="index.html">Home</a></li>
-      </ul>
-   </nav>
+
    <main>
       <section id="noticias">
          <article class="noticia" id="noticia_1">
@@ -32,7 +28,7 @@
             </header>
             <p>
                Css Sushi es un juegazo para aprender css.
-               Pueden acceder al mismo <a href="https://flukeout.github.io/">aqui</a>
+               Pueden acceder al mismo <a href="https://flukeout.github.io/" target="_blank">Aqui</a>
             </p>
          </article>
          <article class="noticia" id="noticia_2">
@@ -52,27 +48,39 @@
             <p>
                Se le pidio a una IA que retrate a los simpson en la vida real y esto es lo que salio.
                queres verlos en el siguiente link: <a
-                  href="https://elcomercio.pe/tecnologia/inteligencia-artificial/asi-se-verian-los-personajes-de-los-simpsons-en-la-vida-real-segun-una-ia-fotos-inteligencia-artificial-midjourney-noticia/">Aqui</a>
+                  href="https://elcomercio.pe/tecnologia/inteligencia-artificial/asi-se-verian-los-personajes-de-los-simpsons-en-la-vida-real-segun-una-ia-fotos-inteligencia-artificial-midjourney-noticia/?foto=1" target="_blank">Aqui</a>
             </p>
          </article>
 
       </section>
       <section id="comentarios">
          <article id="comentario_1">
-            <img src="img/avatar.svg" width="100px" alt="">
+            <div class="login-usuario">
+               <img src="img/avatar.svg" width="60px" alt="">
+               <p>Pedrito Dice:</p>
+            </div>            
             <p>Muy bueno el curso!</p>
          </article>
+
          <article id="comentario_2">
-            <img src="img/avatar.svg" width="100px" alt="">
+            <div class="login-usuario">
+               <img src="img/avatar.svg" width="60px" alt="">     
+               <p>Juanita Dice:</p>                        
+            </div>            
             <p>Aprendi tanto que me llamaron a trabajar de google</p>
          </article>
+
          <article id="comentario_3">
-            <img src="img/avatar.svg" width="100px" alt="">
+            <div class="login-usuario">
+               <img src="img/avatar.svg" width="60px" alt="">
+               <p>Juliancito Dice:</p>
+            </div>            
             <p>aguante el html</p>
          </article>
-      </section>
+
+      <!-- </section>
       <section id="deja_tu_comentario">
-         <form>
+         <form class="formulario">
             <label>Nombre:</label>
             <input type="text" required />
             <label>Correo: (Opcional)</label>
@@ -81,14 +89,47 @@
             <textarea></textarea>
             <button>Dejar Comentario</button>
          </form>
-      </section>
+      </section> -->
    </main>
+
+   <!-- formulario sacado de la pagina UIVERSE -->
+
+   <div class="form-container">
+      <p class="title">Logeate Para comentar</p>
+      <form class="form">
+         <div class="input-group">
+            <label for="username">Usuario</label>
+            <input type="text" name="username" id="username" placeholder="">
+         </div>
+         <div class="input-group">
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password" placeholder="">
+            <div class="forgot">
+               <a rel="noopener noreferrer" href="#">Olvidaste tu Contraseña ?</a>
+            </div>
+         </div>
+         <button class="sign">Entrar</button>
+      </form>
+     
+      <p class="signup">Aun no tienes cuenta?
+         <a rel="noopener noreferrer" href="#" class="">Crear una</a>
+      </p>
+   </div>
+
+   <!-- ____________________ -->
+
    <aside>
       <h4>Contrata Fibrecorp</h4>
       <p>La mejor banda ancha para tu hogar</p>
    </aside>
+
+     
    <footer>
-      CopyRight 2023 &copy; Digitallers
+      <div class="footer-copy">
+         <p>
+            CopyRight 2023 &copy; Digitallers
+         </p>
+      </div>      
    </footer>
 </body>
 
