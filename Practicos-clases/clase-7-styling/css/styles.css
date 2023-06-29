@@ -1,0 +1,75 @@
+*{
+   font-family: 'Ubuntu Condensed', sans-serif;
+}
+body{
+   margin: 0;
+   padding: 0;
+   background-color: rgb(231, 192, 129);
+   background-image: url(/clase-7-styling/ice-cream.jpg);
+   background-position:cover ;
+}
+header>h1{
+   margin: 0;
+   padding: 1em;
+   font-family: 'Caprasimo', cursive;
+   color: rgb(255, 255, 255);
+   font-size: 4em;
+   font-weight: 200;
+   text-shadow: 2px 3px 4px rgba(0,0,0,0.6);
+}
+
+h2{
+   color: rgb(255, 255, 255);
+   text-shadow: 2px 3px 4px rgba(0,0,0,0.6);
+}
+
+header{
+   background-color: #f9bbd7;   
+   margin: 0px;
+   display: flex;
+   justify-content: center;
+}
+
+#formWrapper{
+   display: flex;
+   /* flex-direction: column; */
+   justify-content: center;
+}
+
+#formWrapper>div{   
+   background-color:rgba(255, 255, 255, 0.274);;
+   padding: 2em;
+   margin-bottom: 2em;
+   box-shadow: 8px 8px 26px 0px rgba(0,0,0,0.75);
+   border-radius: 20px ;   
+}
+
+form{
+   display: flex;
+   flex-direction: column;    
+}
+input{
+   margin-bottom: 2em;   
+}
+
+button{
+   background-color:rgb(246, 154, 155);
+   padding: 1em;
+   border-radius: 5px;
+   border:none;
+   font-size: 20px;
+   color: rgb(240, 248, 255);  
+   box-shadow: 8px; 
+}
+
+button:hover{
+   background-color: rgb(242, 104, 104);
+   box-shadow: 8px 8px 26px 0px rgb(114, 191, 165);
+}
+
+footer {
+   padding-bottom: 0;
+   margin-bottom: 0;
+   display:flex;
+   flex-direction: column;
+}
