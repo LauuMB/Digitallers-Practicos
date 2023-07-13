@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <title>Bienvenidos a Javascript</title>
+   <script>
+      //ejemplo 1:
+      // let nombre = "Laura";
+      // const nacimiento = 1992;
+      // let variable;
+      // console.log("Hola " + nombre + " del " + nacimiento);
+      // console.log(typeof nombre);
+      // console.log(typeof nacimiento);
+      // console.log(typeof variable);
+
+      //ejemplo 2:
+      // numA = 20;
+      // numB = 2;
+      // console.log(numA + numB);
+
+      //ejemplo 3:
+      //string + numero = string
+      // const numA = "20";
+      // const numB = "2";
+      // console.log(numA + numB);
+
+      //ejemplo 4:
+      //const numA = 20;
+      //const numB = "2";
+      // console.log(numA + numB);
+       
+      //ejemplo 5:
+      //cuidar con los nombres de las variales(ser especifico)
+      // let a = 2023
+      // let b = 0;
+      // let resultado = a / b;
+      // console.log(resultado); // da infinity
+      // let c = Infinity;
+      // console.log(c)
+      // let d = NaN; // Not a Number
+      // console.log(d)
+      // console.log(typeof d); // Number
+      // let e = Math.sqrt(-1);
+      // console.log(e); //NaN
+
+      //ejemplo 6:
+      // alert("Hola mundo Browser");
+      // alert("Hola mundo Browser");
+      // alert("Hola mundo Browser");
+      // alert("Hola mundo Browser");
+      // alert("Hola mundo Browser");
+
+      //ejemplo 7:
+      // let nombre = prompt("como te llamas?");
+      // let nacimiento = prompt("Cuando naciste?");
+      // alert("Hola " + nombre + " del "+ nacimiento);
+      // console.log(typeof nombre);
+      // console.log(typeof nacimiento);
+
+      // let edad = prompt("ingrese su edad");
+      // if (edad >= 18){
+      //    alert("Udted es mayor de edad");
+      // }
+      // else{
+      //    alert("Usted es menor de edad");
+      // }
+
+
+      // let punto = { x:10, y:20 }; //Javascrip object Notacion (JSON)
+      // console.log(typeof punto);
+      // console.log(punto);
+      // console.log(punto.x);
+      // console.log(punto.y);
+      
+
+      //ejemplo 8:
+      // const persona = {
+      //    nombre : "Laura",   //campo, propiedad, miembro (clave:valor)
+      //    apellido : "Blanco",
+      //    edad : 31
+      // };
+      // console.log(persona); // [object object]
+      // console.log(JSON.stringify(persona));   //JSON.stringify
+      // console.log(persona.nombre);
+      // console.log(persona.edad);
+      // console.log(persona["nombre"]);
+      // console.error(persona.nombre + ' ' + persona.apellido);
+      // console.table(persona);
+      // console.log("%c " + persona.nombre, "font-size:40px; color:pink; padding:1em; background-color: violet;");
+      // console.log(`%c ${persona.nombre} ${persona.apellido}`, "color:purple"); //strings interpolados con back tick
+      
+
+      //vamos probando distintos valores
+      // let respuesta = false;
+      // let respuesta = true;
+
+      let edad = 6;
+      let tienePermiso =true;
+      // let respuesta = (edad > 19); // expresion boleana
+      // let respuesta = (edad>19) && tienePermiso; //tiene que tener mas de 19 y ademas tener permiso
+      // let respuesta = (edad>19) || tienePermiso; // solo debe cumplir una condicion
+      
+      //let respuesta = 0; //false                        >>> falsy
+      //let respuesta = 212 //verdadero (cualquier numero)  >>> thruthy 
+
+      //let respuesta = "Hola que tal";   // >>> thruthy
+      //let respuesta = "  ";             // >>> thruthy
+      //let respuesta = "";               // >>> falsy  
+      //let respuesta = NaN;              // >>> falsy
+      //let respuesta = Infinity          // >>> thruthy
+      //let respuesta = undefined;        // >>> falsy
+      //let respuesta = null;             // >>> falsy
+      //let respuesta = {};               // >>> thruthy
+      
+       let respuesta = confirm("esta seguro que quiere continuar?");
+
+      console.log(typeof respuesta);
+      if (respuesta){
+         console.log("%cAcceso concedido", "font-size:30px; color:blue;");
+      }
+      else{
+         console.log("%cAcceso denegado", "font-size:30px; color:red;");
+      }
+
+   </script>
+</head>
+<body>
+   <h1>Bienvenidos a JavaScript</h1>
+</body>
+</html>
